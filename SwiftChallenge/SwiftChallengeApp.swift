@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftChallengeApp: App {
+    var members = MemberStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MemberCardView()
+                .environmentObject(members)
         }
     }
 }

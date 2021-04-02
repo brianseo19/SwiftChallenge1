@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861D9E362609689E00A1924D /* MemberCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D9E352609689E00A1924D /* MemberCardView.swift */; };
+		861D9E392609D69900A1924D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861D9E382609D69900A1924D /* SearchBar.swift */; };
 		8634B9D32605BA7F00B1AE97 /* SwiftChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9D22605BA7F00B1AE97 /* SwiftChallengeApp.swift */; };
-		8634B9D52605BA7F00B1AE97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9D42605BA7F00B1AE97 /* ContentView.swift */; };
+		8634B9D52605BA7F00B1AE97 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9D42605BA7F00B1AE97 /* FormView.swift */; };
 		8634B9D72605BA8300B1AE97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8634B9D62605BA8300B1AE97 /* Assets.xcassets */; };
 		8634B9DA2605BA8300B1AE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8634B9D92605BA8300B1AE97 /* Preview Assets.xcassets */; };
+		8634B9E42605C81E00B1AE97 /* MemberCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9E32605C81E00B1AE97 /* MemberCard.swift */; };
+		8634B9E72605D2AE00B1AE97 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9E62605D2AE00B1AE97 /* Member.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		861D9E352609689E00A1924D /* MemberCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCardView.swift; sourceTree = "<group>"; };
+		861D9E382609D69900A1924D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8634B9CF2605BA7F00B1AE97 /* SwiftChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8634B9D22605BA7F00B1AE97 /* SwiftChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChallengeApp.swift; sourceTree = "<group>"; };
-		8634B9D42605BA7F00B1AE97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8634B9D42605BA7F00B1AE97 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		8634B9D62605BA8300B1AE97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8634B9D92605BA8300B1AE97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8634B9DB2605BA8300B1AE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8634B9E32605C81E00B1AE97 /* MemberCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCard.swift; sourceTree = "<group>"; };
+		8634B9E62605D2AE00B1AE97 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				8634B9D22605BA7F00B1AE97 /* SwiftChallengeApp.swift */,
-				8634B9D42605BA7F00B1AE97 /* ContentView.swift */,
+				8634B9D42605BA7F00B1AE97 /* FormView.swift */,
+				8634B9E32605C81E00B1AE97 /* MemberCard.swift */,
+				861D9E352609689E00A1924D /* MemberCardView.swift */,
+				861D9E382609D69900A1924D /* SearchBar.swift */,
+				8634B9E62605D2AE00B1AE97 /* Member.swift */,
 				8634B9D62605BA8300B1AE97 /* Assets.xcassets */,
 				8634B9DB2605BA8300B1AE97 /* Info.plist */,
 				8634B9D82605BA8300B1AE97 /* Preview Content */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8634B9D52605BA7F00B1AE97 /* ContentView.swift in Sources */,
+				861D9E362609689E00A1924D /* MemberCardView.swift in Sources */,
+				8634B9D52605BA7F00B1AE97 /* FormView.swift in Sources */,
 				8634B9D32605BA7F00B1AE97 /* SwiftChallengeApp.swift in Sources */,
+				8634B9E42605C81E00B1AE97 /* MemberCard.swift in Sources */,
+				8634B9E72605D2AE00B1AE97 /* Member.swift in Sources */,
+				861D9E392609D69900A1924D /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
