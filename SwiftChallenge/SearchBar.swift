@@ -14,8 +14,6 @@ struct SearchBar: View {
     var body: some View {
         
         VStack {
-            
-            
             HStack {
                 TextField("Search for member...", text: $text)
                     .padding(7)

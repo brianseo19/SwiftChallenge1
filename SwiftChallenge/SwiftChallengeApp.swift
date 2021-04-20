@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftChallengeApp: App {
-    var members = MemberStore()
+    var memberStore = MemberStore()
     
     var body: some Scene {
         WindowGroup {
             MemberCardView()
-                .environmentObject(members)
+                .environmentObject(memberStore)
         }
     }
 }

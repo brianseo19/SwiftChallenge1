@@ -10,9 +10,14 @@ import SwiftUI
 class MemberStore: ObservableObject {
     @Published var members = [Member]()
     
-    func addMember(firstName: String, lastName: String, email: String, zipCode: String, age: Double, pushNotif: Bool) -> Void {
-        let newMember = Member(firstName: firstName, lastName: lastName, email: email, zipCode: zipCode, age: age, pushNotif: pushNotif)
-        members.append(newMember)
+//    func addMember(firstName: String, lastName: String, email: String, zipCode: String, age: Double, pushNotif: Bool) -> Void {
+//        let newMember = Member(firstName: firstName, lastName: lastName, email: email, zipCode: zipCode, age: age, pushNotif: pushNotif)
+//        members.append(newMember)
+//    }
+    init() {
+        self.members = []
+        let brian = Member(firstName: "Brian", lastName: "Seo", email: "brian.seo919@gmail.com", zipCode: "85286", age: 21, pushNotif: true)
+        members.append(brian)
     }
 }
 
