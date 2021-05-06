@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SwiftChallengeApp: App {
-    var memberStore = MemberStore()
+    @StateObject var memberStore = MemberStore()
     
     var body: some Scene {
         WindowGroup {

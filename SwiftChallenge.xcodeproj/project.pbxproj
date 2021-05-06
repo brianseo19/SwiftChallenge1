@@ -15,7 +15,11 @@
 		8634B9DA2605BA8300B1AE97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8634B9D92605BA8300B1AE97 /* Preview Assets.xcassets */; };
 		8634B9E42605C81E00B1AE97 /* MemberCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9E32605C81E00B1AE97 /* MemberCard.swift */; };
 		8634B9E72605D2AE00B1AE97 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634B9E62605D2AE00B1AE97 /* Member.swift */; };
+		863767BB2636426E0017E3BF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863767BA2636426D0017E3BF /* Validation.swift */; };
+		863767E0263CA3C10017E3BF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863767DF263CA3C10017E3BF /* ImagePicker.swift */; };
+		863767E3263CA7FE0017E3BF /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863767E2263CA7FE0017E3BF /* EditView.swift */; };
 		86A6FF1A262E144200DCDA63 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF19262E144200DCDA63 /* ProfileView.swift */; };
+		86D54F032643B5E1002D6AEF /* SearchBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D54F022643B5E1002D6AEF /* SearchBar2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +33,11 @@
 		8634B9DB2605BA8300B1AE97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8634B9E32605C81E00B1AE97 /* MemberCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCard.swift; sourceTree = "<group>"; };
 		8634B9E62605D2AE00B1AE97 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		863767BA2636426D0017E3BF /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		863767DF263CA3C10017E3BF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		863767E2263CA7FE0017E3BF /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		86A6FF19262E144200DCDA63 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		86D54F022643B5E1002D6AEF /* SearchBar2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				8634B9D22605BA7F00B1AE97 /* SwiftChallengeApp.swift */,
-				8634B9D42605BA7F00B1AE97 /* FormView.swift */,
-				8634B9E32605C81E00B1AE97 /* MemberCard.swift */,
-				861D9E352609689E00A1924D /* MemberCardView.swift */,
-				86A6FF19262E144200DCDA63 /* ProfileView.swift */,
-				861D9E382609D69900A1924D /* SearchBar.swift */,
-				8634B9E62605D2AE00B1AE97 /* Member.swift */,
+				863767DE263CA36A0017E3BF /* Views */,
+				863767DD263CA3540017E3BF /* Model */,
 				8634B9D62605BA8300B1AE97 /* Assets.xcassets */,
 				8634B9DB2605BA8300B1AE97 /* Info.plist */,
 				8634B9D82605BA8300B1AE97 /* Preview Content */,
@@ -82,6 +86,30 @@
 				8634B9D92605BA8300B1AE97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		863767DD263CA3540017E3BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				863767BA2636426D0017E3BF /* Validation.swift */,
+				8634B9E62605D2AE00B1AE97 /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		863767DE263CA36A0017E3BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8634B9D42605BA7F00B1AE97 /* FormView.swift */,
+				8634B9E32605C81E00B1AE97 /* MemberCard.swift */,
+				861D9E352609689E00A1924D /* MemberCardView.swift */,
+				86D54F022643B5E1002D6AEF /* SearchBar2.swift */,
+				86A6FF19262E144200DCDA63 /* ProfileView.swift */,
+				863767E2263CA7FE0017E3BF /* EditView.swift */,
+				861D9E382609D69900A1924D /* SearchBar.swift */,
+				863767DF263CA3C10017E3BF /* ImagePicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D54F032643B5E1002D6AEF /* SearchBar2.swift in Sources */,
 				861D9E362609689E00A1924D /* MemberCardView.swift in Sources */,
 				8634B9D52605BA7F00B1AE97 /* FormView.swift in Sources */,
 				8634B9D32605BA7F00B1AE97 /* SwiftChallengeApp.swift in Sources */,
+				863767E0263CA3C10017E3BF /* ImagePicker.swift in Sources */,
 				8634B9E42605C81E00B1AE97 /* MemberCard.swift in Sources */,
 				8634B9E72605D2AE00B1AE97 /* Member.swift in Sources */,
+				863767E3263CA7FE0017E3BF /* EditView.swift in Sources */,
 				86A6FF1A262E144200DCDA63 /* ProfileView.swift in Sources */,
+				863767BB2636426E0017E3BF /* Validation.swift in Sources */,
 				861D9E392609D69900A1924D /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

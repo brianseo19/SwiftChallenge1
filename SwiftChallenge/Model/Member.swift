@@ -10,18 +10,14 @@ import SwiftUI
 class MemberStore: ObservableObject {
     @Published var members = [Member]()
     
-//    func addMember(firstName: String, lastName: String, email: String, zipCode: String, age: Double, pushNotif: Bool) -> Void {
-//        let newMember = Member(firstName: firstName, lastName: lastName, email: email, zipCode: zipCode, age: age, pushNotif: pushNotif)
-//        members.append(newMember)
-//    }
     init() {
         self.members = []
-        let brian = Member(firstName: "Brian", lastName: "Seo", email: "brian.seo919@gmail.com", zipCode: "85286", age: 21, pushNotif: true)
+        let brian = Member(firstName: "Brian", lastName: "Seo", email: "wseo7@asu.edu", zipCode: "85286", age: 21, pushNotif: true, profilePic: UIImage(named: "portrait2")!)
         members.append(brian)
     }
 }
 
-class Member: Identifiable {
+struct Member: Identifiable{
     var id: UUID
     var firstName: String
     var lastName: String
@@ -29,8 +25,9 @@ class Member: Identifiable {
     var zipCode: String
     var age: Double
     var pushNotif: Bool
+    var profilePic: UIImage
     
-    init(firstName: String, lastName: String, email: String, zipCode: String, age: Double, pushNotif: Bool)
+    init(firstName: String, lastName: String, email: String, zipCode: String, age: Double, pushNotif: Bool, profilePic: UIImage)
     {
         self.firstName = firstName
         self.lastName = lastName
@@ -39,6 +36,7 @@ class Member: Identifiable {
         self.age = age
         self.pushNotif = pushNotif
         self.id = UUID()
+        self.profilePic = profilePic
     }
     
 }

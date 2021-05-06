@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct MemberCard: View {
-    var member = Member(firstName: "Brian", lastName: "Seo", email: "brian.seo919@gmail.com", zipCode: "85286", age: 21, pushNotif: true)
+
+    @Binding var member: Member
     var body: some View {
         HStack {
-            Image("portrait2")
+            Image(uiImage: member.profilePic)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, alignment: .center)
+                .scaledToFill()
+                .frame(width: 80, height: 80, alignment: .center)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.gray, lineWidth: 2))
                 .shadow(radius: 5)
@@ -24,6 +25,7 @@ struct MemberCard: View {
                     .font(.system(.title))
                     .fontWeight(.semibold)
                     .lineLimit(1)
+                    .minimumScaleFactor(0.7)
                 HStack {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
@@ -47,7 +49,7 @@ struct MemberCard: View {
 }
 struct MemberCard_Previews: PreviewProvider {
     static var previews: some View {
-        MemberCard()
+        MemberCard(member: .constant(Member(firstName: "Brian", lastName: "Seo", email: "brian.seo919@gmail.com", zipCode: "85286", age: 21, pushNotif: true, profilePic: UIImage(named: "portrait2")!)))
     }
 }
 
